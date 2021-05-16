@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-header">
+        Register new address
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Register new address</h5>
+        <form [formGroup]="createAddressForm" (ngSubmit)="onSubmitCreateAddress()">
+            <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label for="inputCountry">Country</label>
+                <select id="inputCountry" class="form-control" formControlName="country">
+                    <option selected>Choose...</option>
+                    <option>Negara Berkembang Indonesia</option>
+                    <option>Sunda Empire</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control" formControlName="state">
+                    <option selected>Choose...</option>
+                    <option>North Java</option>
+                </select>
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" formControlName="city">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" formControlName="zip">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="street">Street</label>
+                    <input type="text" class="form-control" id="details" placeholder="St. Sirotol Mustakim"
+                        formControlName="street">
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="details">Details</label>
+                <input type="text" class="form-control" id="details" placeholder="Apartment number, ErTE ErWE"
+                    formControlName="details">
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!createAddressForm.valid">Register</button>
+        </form>
+    </div>
+</div>

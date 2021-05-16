@@ -1,0 +1,28 @@
+.main-view{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+aside {
+    flex:content;
+}
+
+.product.col {
+    flex: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 0px 10px 20px 10px;
+}
+
+h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

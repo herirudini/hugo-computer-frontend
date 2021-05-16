@@ -1,0 +1,25 @@
+<div class="main-view col">
+    <div class="product col">
+        <div class="card" style="width: 18rem;" *ngFor="let product of products">
+            <img class="card-img-top" [src]="product.image[0]" alt="Card image cap">
+            <div class="card-body">
+                <a [routerLink]="['/products', product.category, product._id]">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                </a>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Category: <i>{{product.category}}</i></li>
+                <li class="list-group-item">Price: <i>{{product.priceTag}}</i></li>
+                <li class="list-group-item">Stock: <i>{{product.stock}}</i></li>
+            </ul>
+        </div>
+    </div>
+    <aside class="col">
+        <section>
+            <app-sort-product></app-sort-product>
+        </section>
+        <section>
+            <app-recommend-product></app-recommend-product>
+        </section>
+    </aside>
+</div>

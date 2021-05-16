@@ -1,0 +1,19 @@
+<div class="card-group">
+    <div class="card">
+        <img class="card-img-top" [src]="productImage" alt="Card image cap">
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ productName }}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Category: <i>{{productCategory}}</i></li>
+            <li class="list-group-item">Price: <i>{{productPriceTag}}</i></li>
+            <li class="list-group-item">Stock: <i>{{productStock}}</i></li>
+            <li class="card-title">Stock: <i>{{productDescription}}</i></li>
+        </ul>
+    </div>
+</div>
+<aside class="col">
+    <app-add-cart></app-add-cart>
+</aside>

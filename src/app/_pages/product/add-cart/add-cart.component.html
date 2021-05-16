@@ -1,0 +1,14 @@
+<form class="card" [formGroup]="addCartForm" (ngSubmit)="onSubmitAddCart()">
+    <h5>Add To Cart</h5>
+    <div class="form-group">
+        <label for="selectQuantity">Quantity</label> <input type="number" class="form-control" id="selectQuantity" required
+        formControlName="quantity">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" id="addNotes" rows="3" placeholder="Add notes" required
+        formControlName="notes"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary"><i class="fa fa-cart-plus"></i>Add To Cart</button>
+    </div>
+</form>

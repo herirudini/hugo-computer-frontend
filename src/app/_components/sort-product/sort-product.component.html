@@ -1,0 +1,46 @@
+<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">Sort Products</div>
+    <div class="card-body">
+        <h5 class="card-title">Sort by: </h5>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sort-products" id="sort-by-categories" value="categories"
+                checked>
+            <label class="form-check-label" for="sort-by-categories">
+                Categories
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sort-products" id="sort-by-ratings" value="ratings">
+            <label class="form-check-label" for="sort-by-ratings">
+                Ratings
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sort-products" id="sort-by-stocks" value="stocks">
+            <label class="form-check-label" for="sort-by-stocks">
+                Stocks
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sort-products" id="sort-by-latest" value="new-latest">
+            <label class="form-check-label" for="sort-by-latest">
+                New latest
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sort-products" id="sort-by-popular"
+                value="popular-products" disabled>
+            <label class="form-check-label" for="sort-by-popular">
+                Popular products
+            </label>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="sort-by-price" class="form-label">Set price range</label>
+                <input type="text" class="form-control" id="set-min-price" placeholder="min">
+                <input type="text" class="form-control" id="set-max-price" placeholder="max">
+            </div>
+            <button type="submit" class="btn btn-primary">Go!</button>
+        </form>
+    </div>
+</div>

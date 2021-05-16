@@ -1,0 +1,29 @@
+.fa {
+    font-size: medium;
+}
+.wide-btn {
+    /* display: none; */
+    text-decoration: none;
+}
+.wide-btn::before {
+    content: " ";
+    white-space: pre;
+}
+/* .navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+} */
+
+@media screen and (max-width: 990px) {
+    .wide-btn {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .wide-btn {
+        display: contents;
+    }
+}

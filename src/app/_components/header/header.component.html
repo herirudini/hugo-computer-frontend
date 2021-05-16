@@ -1,0 +1,37 @@
+<header class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" [routerLink]="['/']"><img src="../favicon.ico" alt="LibraComp logo"> Hugo Computer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <section class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Category
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" [routerLink]="['/products/Notebook-pc']">Notebook/PC</a>
+                        <a class="dropdown-item" [routerLink]="['/products/Smartphone']">Smartphone</a>
+                        <a class="dropdown-item" [routerLink]="['/products/Hardware']">Hardware</a>
+                        <a class="dropdown-item" [routerLink]="['/products/Electronics']">Electronics</a>
+                        <a class="dropdown-item" [routerLink]="['/products/Tools']">Tools</a>
+                    </div>
+                </section>
+            </div>
+            <div class="navbar-nav my-0">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="e.g Frankpad T440p" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i><u class="wide-btn">Search</u></button>
+                </form>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link nav-item" [routerLink]="['/cart']"><i class="fa fa-cart-arrow-down"></i><u class="wide-btn">Cart</u></a>
+                <a class="nav-link nav-item" [routerLink]="['/message']"><i class="fa fa-envelope"></i><u class="wide-btn">Message</u></a>
+                <a class="nav-link nav-item" [routerLink]="['/account']"><i class="fa fa-user-circle"></i><u class="wide-btn">Account</u></a>
+            </div>
+        </div>
+    </nav>
+</header>
