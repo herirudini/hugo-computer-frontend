@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const endPointUrl: string = "https://hugo-computer.herokuapp.com"
+export const endPointUrl: string = "https://hugocomputer-api.herokuapp.com"
 
 /*
  * For easier debugging in development mode, you can import the following file
