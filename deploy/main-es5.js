@@ -3671,34 +3671,38 @@
       };
 
       var _c1 = function _c1() {
-        return ["/products/Notebook-pc"];
+        return ["../favicon.ico"];
       };
 
       var _c2 = function _c2() {
-        return ["/products/Smartphone"];
+        return ["/products/Notebook-pc"];
       };
 
       var _c3 = function _c3() {
-        return ["/products/Hardware"];
+        return ["/products/Smartphone"];
       };
 
       var _c4 = function _c4() {
-        return ["/products/Electronics"];
+        return ["/products/Hardware"];
       };
 
       var _c5 = function _c5() {
-        return ["/products/Tools"];
+        return ["/products/Electronics"];
       };
 
       var _c6 = function _c6() {
-        return ["/cart"];
+        return ["/products/Tools"];
       };
 
       var _c7 = function _c7() {
-        return ["/message"];
+        return ["/cart"];
       };
 
       var _c8 = function _c8() {
+        return ["/message"];
+      };
+
+      var _c9 = function _c9() {
         return ["/account"];
       };
 
@@ -3723,8 +3727,8 @@
         type: HeaderComponent,
         selectors: [["app-header"]],
         decls: 43,
-        vars: 18,
-        consts: [[1, "fixed-top"], [1, "navbar", "navbar-expand-md", "navbar-dark", "bg-dark"], [1, "navbar-brand", 3, "routerLink"], ["src", "../favicon.ico", "alt", "LibraComp logo"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "navbar-nav", "my-0"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "e.g Frankpad T440p", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"], [1, "fa", "fa-search"], [1, "wide-btn"], [1, "navbar-nav", "ml-auto"], [1, "nav-link", "nav-item", 3, "routerLink"], [1, "fa", "fa-cart-arrow-down"], [1, "fa", "fa-envelope"], [1, "fa", "fa-user-circle"]],
+        vars: 20,
+        consts: [[1, "fixed-top"], [1, "navbar", "navbar-expand-md", "navbar-dark", "bg-dark"], [1, "navbar-brand", 3, "routerLink"], ["alt", "LibraComp logo", 3, "src"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "routerLink"], [1, "navbar-nav", "my-0"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "e.g Frankpad T440p", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"], [1, "fa", "fa-search"], [1, "wide-btn"], [1, "navbar-nav", "ml-auto"], [1, "nav-link", "nav-item", 3, "routerLink"], [1, "fa", "fa-cart-arrow-down"], [1, "fa", "fa-envelope"], [1, "fa", "fa-user-circle"]],
         template: function HeaderComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header", 0);
@@ -3867,39 +3871,43 @@
           if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c0));
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c0));
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c1));
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c2));
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](12, _c3));
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](13, _c4));
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](14, _c5));
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c1), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](15, _c6));
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](12, _c2));
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](13, _c3));
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](14, _c4));
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](15, _c5));
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](16, _c6));
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](17, _c7));
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](16, _c7));
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](18, _c8));
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](17, _c8));
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](19, _c9));
           }
         },
         directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵangular_packages_forms_forms_ba"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgForm"]],
