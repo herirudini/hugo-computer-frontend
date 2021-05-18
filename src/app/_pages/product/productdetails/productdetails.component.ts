@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/_models/product.model';
 import { ProductService } from 'src/app/_services/product.service';
 
@@ -15,10 +16,14 @@ export class ProductdetailsComponent implements OnInit {
   productPriceTag: Product["priceTag"] | undefined;
   productDescription: Product["description"] | undefined;
 
-  constructor(private pServices: ProductService) { }
+  constructor(private route: ActivatedRoute, private pServices: ProductService) { }
+  getParams!: string
 
   ngOnInit(): void {
-    this.pServices.getProductDetails().subscribe((dataProduct: any)=> {
+    this.getParams = this.route.snapshot.params['product_id'];
+    console.log("product_id:" + this.getParams)
+
+    this.pServices.getProductDetails(this.getParams).subscribe((dataProduct: any)=> {
       this.productName = dataProduct.name;
       this.productImage = dataProduct.image;
       this.productStock = dataProduct.stock;

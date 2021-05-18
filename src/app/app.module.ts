@@ -10,8 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderComponent } from './_components/header/header.component';
 import { FooterComponent } from './_components/footer/footer.component';
-import { SortProductComponent } from './_components/sort-product/sort-product.component';
-import { RecommendProductComponent } from './_components/recommend-product/recommend-product.component';
+import { SortProductComponent } from './_pages/product/sort-product/sort-product.component';
+import { RecommendProductComponent } from './_pages/product/recommend-product/recommend-product.component';
 import { BannerComponent } from './_components/banner/banner.component';
 import { LoginComponent } from './_pages/auth/login/login.component';
 import { SignupComponent } from './_pages/auth/signup/signup.component';

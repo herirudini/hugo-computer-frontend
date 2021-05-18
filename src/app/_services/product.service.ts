@@ -18,22 +18,22 @@ endPointUrl = endPointUrl;
       })
     );
   }
-  getCategory(): any {
-    return this.http.get<any>(this.endPointUrl + '/products/:category').pipe(
+  getCategory(params: string): any {
+    return this.http.get<any>(this.endPointUrl + '/products/' + params).pipe(
       map(res => {
         return res.data || {};
       })
     );
   }
-  getProductDetails(): any {
-    return this.http.get<any>(this.endPointUrl + '/products/:category/prouct_id').pipe(
+  getProductDetails(params: string): any {
+    return this.http.get<any>(this.endPointUrl + '/products/:category/' + params).pipe(
       map(res => {
         return res.data || {};
       })
     );
   }
-  addToCart(data: any): Observable<any> {
+  addToCart(params: string, data: any): Observable<any> {
     console.log('run addToCart..')
-    return this.http.post(endPointUrl + `/products/:category/product_id`, data)
+    return this.http.post(endPointUrl + `/products/:category/` + params, data)
   }
 }
