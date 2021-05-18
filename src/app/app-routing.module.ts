@@ -16,23 +16,19 @@ import { EditOrderComponent } from './_pages/cart/edit-order/edit-order.componen
 import { EditAccountComponent } from './_pages/account/edit-account/edit-account.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: '/products', pathMatch: "full"},
-  {path: "products", component: ProductComponent, children: [
-    {path: ":category", component: CategoryComponent},
-    {path: ":category/:product_id", component: ProductdetailsComponent}
-  ]},
+  {path: "", redirectTo: '/', pathMatch: "full"},
+  {path: "", component: ProductComponent},
+  {path: "products/:category", component: CategoryComponent},
+  {path: "products/:category/:product_id", component: ProductdetailsComponent},
   {path: "signup", component: SignupComponent},
   {path: "login", component: LoginComponent},
-  {path: "account", component: AccountComponent, children: [
-    {path: "edit-account", component: EditAccountComponent},
-    {path: "create-address", component: CreateAddressComponent}
-  ]},
-  {path: "cart", component: CartComponent, children: [
-    {path: ":order_id", component: EditOrderComponent}
-  ]},
-  {path: "invoice", component: InvoiceComponent, children: [
-    {path: "history", component: PurchasingHistoryComponent}
-  ]},
+  {path: "account", component: AccountComponent},
+  {path: "account/edit-account", component: EditAccountComponent},
+  {path: "account/create-address", component: CreateAddressComponent},
+  {path: "cart", component: CartComponent},
+  {path: "cart/:order_id", component: EditOrderComponent},
+  {path: "invoice", component: InvoiceComponent},
+  {path: "invoice/history", component: PurchasingHistoryComponent},
   {path: "message", component: MessageComponent},
   {path: '**', component: PageNotFoundComponent},
 
