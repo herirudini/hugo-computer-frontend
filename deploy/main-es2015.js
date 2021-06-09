@@ -1759,7 +1759,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const _c0 = function () { return ["/"]; };
-const _c1 = function () { return ["../../favicon.ico"]; };
+const _c1 = function () { return ["../../assets/favicon.ico"]; };
 const _c2 = function () { return ["/products/Notebook-pc"]; };
 const _c3 = function () { return ["/products/Smartphone"]; };
 const _c4 = function () { return ["/products/Hardware"]; };

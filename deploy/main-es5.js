@@ -3723,7 +3723,7 @@
       };
 
       var _c1 = function _c1() {
-        return ["../../favicon.ico"];
+        return ["../../assets/favicon.ico"];
       };
 
       var _c2 = function _c2() {
