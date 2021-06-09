@@ -1,15 +1,9 @@
-function requireHTTPS(req, res, next) {
-if (!req.secure && req.get('x-forwareded-proto') !== 'https') {
-return res.redirect('https://' + req.get('host') + req.url)
-}
-next()
-}
+const path = require("path");
 const express = require("express");
 const app = express();
-app.use(requireHTTPS)
-app.use(express.static('./dist/e-commerce'));
+app.use(express.static('dist/build'));
 app.get('/*', function(req,res){
-res.sendFile('index.html', {root: 'dist/e-commerce'})
+res.sendFile(path.join('dist/build', 'index.html'))
 });
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
